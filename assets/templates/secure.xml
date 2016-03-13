@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <data_collect>
+        <mediaprovider>
+            <isCollect>1</isCollect>
+            <frequency>5</frequency>
+        </mediaprovider>
+    </data_collect>
+</config>

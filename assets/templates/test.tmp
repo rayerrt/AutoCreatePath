@@ -1,0 +1,39 @@
+2016-01-02_08:00:02 ImsiChecker isImsiChanged [Beg]
+2016-01-02_08:00:02 ImsiChecker isImsiChanged [End][First--ture]
+2016-01-02_08:00:02 ImsiChecker isImsiChanged [Beg]
+2016-01-02_08:00:02 ImsiChecker isImsiChanged-lastImsi:[][]
+2016-01-02_08:00:02 ImsiChecker isImsiChanged-currImsi:[][]
+2016-01-02_08:00:02 ImsiChecker isImsiChanged [End][false]
+2016-01-02_08:00:03 ProfileUpload no network
+2016-01-02_08:00:03 IpPlot IpPlot() isTest: false
+2016-01-02_08:00:03 IpPlot getOper() usingWifi
+2016-01-02_08:00:03 IpPlot getOper() oper:2
+2016-01-02_08:00:03 IpPlot getOper() usingWifi
+2016-01-02_08:00:03 IpPlot getOper() oper:2
+2016-01-02_08:00:03 IpPlot printWrokingIpList() mWorkingIpList[0]: mazu.3g.qq.com
+2016-01-02_08:00:03 IpPlot refreshWorkingList() only domain
+2016-01-02_08:00:03 IpPlot getOper() usingWifi
+2016-01-02_08:00:03 IpPlot getOper() oper:2
+2016-01-02_08:00:03 IpPlot getOper() usingWifi
+2016-01-02_08:00:03 IpPlot getOper() oper:2
+2016-01-02_08:00:03 IpPlot resetToDefaultList()
+2016-01-02_08:00:03 IpPlot printWrokingIpList() mWorkingIpList[0]: mazu.3g.qq.com
+2016-01-02_08:00:03 IpPlot refreshWorkingList() resetToDefaultList()
+2016-01-02_08:00:03 IpPlot IpPlot() isTest: false
+2016-01-02_08:00:03 ProfileUpload no network
+2016-01-02_08:00:03 IpPlot printWrokingIpList() mWorkingIpList[0]: mazu.3g.qq.com
+2016-01-02_08:00:03 IpPlot getOper() usingWifi
+2016-01-02_08:00:03 IpPlot getOper() oper:2
+2016-01-02_08:00:03 IpPlot getOper() usingWifi
+2016-01-02_08:00:03 IpPlot getOper() oper:2
+2016-01-02_08:00:03 IpPlot printWrokingIpList() mWorkingIpList[0]: mazu.3g.qq.com
+2016-01-02_08:00:03 IpPlot refreshWorkingList() only domain
+2016-01-02_08:00:03 IpPlot getOper() usingWifi
+2016-01-02_08:00:03 IpPlot getOper() oper:2
+2016-01-02_08:00:03 IpPlot getOper() usingWifi
+2016-01-02_08:00:03 IpPlot getOper() oper:2
+2016-01-02_08:00:03 IpPlot resetToDefaultList()
+2016-01-02_08:00:03 IpPlot printWrokingIpList() mWorkingIpList[0]: mazu.3g.qq.com
+2016-01-02_08:00:03 IpPlot refreshWorkingList() resetToDefaultList()
+2016-01-02_08:00:03 IpPlot printWrokingIpList() mWorkingIpList[0]: mazu.3g.qq.co
+2016-01-02_08:00:03 IpPlot printWrokingIpList() mWorkingIpList[0]: mazu.3g.qq.co

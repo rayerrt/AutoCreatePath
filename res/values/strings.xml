@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AutoCreateFilePath</string>
+    <string name="hello_world">创建目录和文件</string>
+    <string name="action_settings">Settings</string>
+    <string name="create_done">创建目录和文件结束</string>
+    <string name="udisk_mount_error">U盘未挂载异常"</string>
+
+</resources>
