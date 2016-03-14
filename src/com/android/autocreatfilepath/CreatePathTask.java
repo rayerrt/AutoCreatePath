@@ -15,6 +15,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -100,7 +101,7 @@ public class CreatePathTask extends AsyncTask<Integer, String, Integer> {
                 }
                 for (String prefix : RootPrefix) {
                     if (line.startsWith(prefix)) {
-                        line = line.substring(prefix.length() + 1);
+                        line = line.substring(prefix.length());
                         break;
                     }
                 }
@@ -115,26 +116,13 @@ public class CreatePathTask extends AsyncTask<Integer, String, Integer> {
         return true;
     }
 
-    private String createPathByRegexp(String regexp) {
-        if (regexp.contains("[0-9a-f]{32}")) {
-            regexp = regexp.replace("[0-9a-f]", getRandomString(base_hex, 32));
-        } else if (regexp.contains("卍[0-9a-f]{2}")) {
-            regexp = regexp.replace("[0-9a-f]", getRandomString(base_hex, 2));
-        } else if (regexp.contains("[0-9a-f]")) {
-            regexp = regexp.replace("[0-9a-f]", getRandomString(base_hex, 1));
-        }
-        return regexp;
-    }
-
     private void createAllDirOrFile() {
         for (int i = 0; i < dirNameList.size(); ++i) {
             String randomPath = dirNameList.get(i);
-            if (dirNameList.get(i).contains("*")) {
-                randomPath = dirNameList.get(i).replace("*", getRandomString(base, 16));
-            }
             isFilePath(randomPath);
-            //randomPath = randomPath.replace("卍", "");
-            //randomPath = createPathByRegexp(randomPath);
+            if (randomPath.contains("*")) {
+                randomPath = randomPath.replace("*", getRandomString(base, 16));
+            }
             if (isCreateFile) {
                 createSDCardDirOrFile(rootDir + File.separator + tempDirPath, false);
             }
@@ -144,7 +132,6 @@ public class CreatePathTask extends AsyncTask<Integer, String, Integer> {
     }
 
     private void createSDCardDirOrFile(String filePath, boolean createFile) {
-        Log.d(TAG, "createSDCardDirOrFile " + filePath);
         File path = null;
         try {
             path = new File(filePath);
@@ -206,8 +193,16 @@ public class CreatePathTask extends AsyncTask<Integer, String, Integer> {
             }
         }
         Log.d(TAG, "create file randomPath is " + strOutFileName);
-        File file = new File(strOutFileName);
-        file.createNewFile();
+        try {
+            File file = new File(strOutFileName);
+            file.createNewFile();
+            FileWriter mFileWriter = new FileWriter(file);
+            mFileWriter.write("test");
+            mFileWriter.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 }
